@@ -7,9 +7,11 @@ version: 1834d7d28f741ff84941cfe1705282ba
 # The work queue that will handle this deployment's runs
 work_queue_name: test
 tags: []
-parameters: {}
+parameters: {'name': 'Vicky'}
 schedule: null
-infra_overrides: {}
+infra_overrides: 
+  env:
+    PREFECT_LOGGING_LEVEL: DEBUG
 infrastructure:
   type: process
   env: {}
