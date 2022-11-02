@@ -14,7 +14,8 @@ def parse_fact(response):
     return fact
 
 @flow(name="test flow",
-    version=os.getenv("GIT_COMMIT_SHA"))
+    # version=os.getenv("GIT_COMMIT_SHA"))
+    version="tutorial_02")
 def api_flow(url):
     fact_json = call_api(url)
     fact_text = parse_fact(fact_json)

@@ -1,0 +1,41 @@
+###
+### A complete description of a Prefect Deployment for flow 'log-flow'
+###
+name: simply_log
+description: null
+version: 1834d7d28f741ff84941cfe1705282ba
+# The work queue that will handle this deployment's runs
+work_queue_name: test
+tags: []
+parameters: {}
+schedule: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: log-flow
+manifest_path: null
+storage: null
+path: /Users/vickykwan/dev/prefect-local
+entrypoint: log_flow.py:log_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    name:
+      title: name
+      type: string
+  required:
+  - name
+  definitions: null
